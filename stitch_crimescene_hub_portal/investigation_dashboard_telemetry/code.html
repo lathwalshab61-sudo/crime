@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "on-primary-container": "#00626e",
+        "inverse-on-surface": "#2c303b",
+        "error-container": "#93000a",
+        "on-tertiary-fixed": "#2a1700",
+        "primary-fixed-dim": "#00daf3",
+        "on-error-container": "#ffdad6",
+        "secondary-fixed": "#dbe1ff",
+        "on-tertiary-container": "#7e4e00",
+        "on-surface-variant": "#bac9cc",
+        "outline-variant": "#3b494c",
+        "on-tertiary-fixed-variant": "#653e00",
+        "primary-container": "#00e5ff",
+        "surface-bright": "#353944",
+        "inverse-primary": "#006875",
+        "primary-fixed": "#9cf0ff",
+        "tertiary-container": "#ffc681",
+        "secondary-fixed-dim": "#b4c5ff",
+        "on-error": "#690005",
+        "surface-container-high": "#262a34",
+        "outline": "#849396",
+        "on-secondary-fixed": "#00174b",
+        "on-surface": "#dfe2f0",
+        "error": "#ffb4ab",
+        "tertiary": "#ffe9d3",
+        "on-secondary": "#002a78",
+        "surface-container-highest": "#31353f",
+        "secondary": "#b4c5ff",
+        "surface-container": "#1b2029",
+        "surface-variant": "#31353f",
+        "surface-container-low": "#171c25",
+        "background": "#0f131d",
+        "on-background": "#dfe2f0",
+        "on-tertiary": "#472a00",
+        "tertiary-fixed": "#ffddb8",
+        "surface-container-lowest": "#0a0e17",
+        "surface": "#0f131d",
+        "secondary-container": "#0053db",
+        "surface-tint": "#00daf3",
+        "on-primary-fixed": "#001f24",
+        "tertiary-fixed-dim": "#ffb95f",
+        "on-secondary-fixed-variant": "#003ea8",
+        "on-secondary-container": "#cdd7ff",
+        "on-primary": "#00363d",
+        "surface-dim": "#0f131d",
+        "inverse-surface": "#dfe2f0",
+        "primary": "#c3f5ff",
+        "on-primary-fixed-variant": "#004f58"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "gutter-desktop": "1.5rem",
+        "space-md": "1rem",
+        "space-sm": "0.5rem",
+        "gutter": "1rem",
+        "space-xs": "0.25rem",
+        "space-lg": "1.5rem",
+        "space-2xl": "3rem",
+        "margin-tablet": "1.5rem",
+        "margin": "1rem",
+        "space-xl": "2rem",
+        "margin-desktop": "2rem"
+      },
+      "fontFamily": {
+        "code-telemetry": ["JetBrains Mono"],
+        "headline-md": ["Space Grotesk"],
+        "label-lg": ["JetBrains Mono"],
+        "headline-sm": ["Space Grotesk"],
+        "body-sm": ["Inter"],
+        "label-sm": ["JetBrains Mono"],
+        "headline-xl-mobile": ["Space Grotesk"],
+        "headline-xl": ["Space Grotesk"],
+        "body-md": ["Inter"],
+        "headline-lg": ["Space Grotesk"],
+        "label-md": ["JetBrains Mono"],
+        "body-lg": ["Inter"],
+        "display-lg": ["Space Grotesk"],
+        "display-lg-mobile": ["Space Grotesk"]
+      },
+      "fontSize": {
+        "code-telemetry": ["11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+        "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" }],
+        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+        "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }],
+        "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+        "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+        "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+        "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+        "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
+        "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }],
+        "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
+        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+      }
+    }
+  }
+};</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_20px_rgba(3,7,18,0.75)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="CrimeScene Hub Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASJ3haOULw2sHWp_dk7AqQnVxRAPJhxWir3GdpC5WFicTUa-BxQDLcrvdEd89gjuIc1c4YLUVxil5AN3VAQkt2w9KK4sHuYozxlTHu7hUI06RhBvZ19m9CtrvlaIlfbMAMSemUoD7ZNH8FE2VionTPlqPLVrIlmkZvTy8dog299tEcVwVnPhwKgQLa7Y2Sou77SL395HtBxWdXjZchaR9cUNKWarO5eWyvEDrlIvw"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">CrimeScene Hub</span><span class="px-1.5 py-0.5 rounded-DEFAULT bg-primary-container/20 text-primary-container font-label-sm text-label-sm uppercase tracking-wider">SECURE</span></div><div class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span><span class="font-code-telemetry text-code-telemetry text-on-surface-variant uppercase">FORENSIC DEPT // Dashboard</span></div></div></div><div class="flex items-center gap-space-xs"><button aria-label="Global Evidence Search" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><button aria-label="Investigation Telemetry Alerts" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-container"></span></button><div class="w-11 h-11 flex items-center justify-center pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvisKsrmzgZL2ygjNOH-NZ4qhTodCYVkrRpA2pFDMXvsehSn7h92cmXuCjUTzsatZIKUIt_AFPm0IRaeWqyrpknTkioXdPPv9GUXliHFjsatsboujwVZgSeLnXvytJbSzwwE_CLUpDk1WAm9HbJoDU5U--KLvZplWi-n0pDlp5c-at-BPnHVAE3iZXElNubbk5dG-mtvJmeoIKgSoCO_27u0dycb2s75QnwDb6VCg"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full px-gutter space-y-space-lg">
+<!-- Status & Header Meta Unit -->
+<div class="flex flex-col gap-space-xs mt-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container-high text-primary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-code-telemetry text-code-telemetry tracking-wider uppercase">TERMINAL: ONLINE • DEPT #09</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-code-telemetry text-code-telemetry">
+<span class="material-symbols-outlined text-[14px] text-primary-container">sync</span>
+<span>LAT: 40.7128° N</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-primary tracking-tight">Investigation Telemetry</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time bio-metric matching, chemical spectroscopy &amp; chain-of-custody diagnostics.</p>
+</div>
+</div>
+<!-- Central Biometric Scanner Graphic Inspired Card -->
+<div class="relative w-full rounded-xl bg-surface-container-low p-space-md shadow-md overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-primary-container/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-space-md">
+<!-- HUD Radar Reticle Graphic -->
+<div class="relative flex-shrink-0 w-20 h-20 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-inner">
+<svg class="absolute inset-0 w-full h-full text-primary-container/40" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="none" r="46" stroke="currentColor" stroke-dasharray="2 4" stroke-width="1"></circle>
+<circle cx="50" cy="50" fill="none" r="34" stroke="currentColor" stroke-width="1.5"></circle>
+<circle cx="50" cy="50" fill="none" r="22" stroke="currentColor" stroke-dasharray="3 3" stroke-width="1"></circle>
+<line stroke="currentColor" stroke-width="0.75" x1="50" x2="50" y1="4" y2="96"></line>
+<line stroke="currentColor" stroke-width="0.75" x1="4" x2="96" y1="50" y2="50"></line>
+</svg>
+<span class="material-symbols-outlined text-[32px] text-primary-container animate-pulse" style="font-variation-settings: 'FILL' 1;">fingerprint</span>
+<span class="absolute top-1 right-2 text-tertiary-container font-code-telemetry text-label-sm">LIVE</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-wider">AFIS / NGI SATELLITE LINK</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Spectral Core v4.8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Calibrated to ISO 17025 Forensic Protocol</span>
+</div>
+</div>
+</div>
+<!-- Key KPI Stat Cards: 2x2 Grid -->
+<div class="grid grid-cols-2 gap-space-sm w-full">
+<!-- Card 1: Active Investigations -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Active Cases</span>
+<span class="material-symbols-outlined text-[18px] text-primary-container">radar</span>
+</div>
+<div class="my-space-xs">
+<div class="font-display-lg-mobile text-display-lg-mobile text-primary tracking-tight">38</div>
+<div class="flex items-center gap-1 text-primary-fixed-dim font-code-telemetry text-code-telemetry">
+<span class="material-symbols-outlined text-[13px]">arrow_upward</span>
+<span>+12% mo/mo</span>
+</div>
+</div>
+<!-- Mini Sparkline SVG -->
+<div class="w-full pt-1">
+<svg class="w-full h-5 text-primary-container" fill="none" viewbox="0 0 100 24">
+<path d="M0,18 L18,14 L36,19 L54,8 L72,11 L90,3 L100,2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Card 2: Processed Evidence -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Evidence Logs</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">inventory_2</span>
+</div>
+<div class="my-space-xs">
+<div class="font-display-lg-mobile text-display-lg-mobile text-on-surface tracking-tight">1,429</div>
+<div class="flex items-center gap-1 text-tertiary-container font-code-telemetry text-code-telemetry truncate">
+<span class="material-symbols-outlined text-[13px]">verified_user</span>
+<span>100% Chain-of-Custody</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1 mt-1 overflow-hidden">
+<div class="bg-tertiary-container h-full w-full"></div>
+</div>
+</div>
+<!-- Card 3: Biometric Match Rate -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Match Rate</span>
+<span class="material-symbols-outlined text-[18px] text-primary-container">biotech</span>
+</div>
+<div class="my-space-xs">
+<div class="font-display-lg-mobile text-display-lg-mobile text-primary tracking-tight">98.4%</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-code-telemetry text-code-telemetry">
+<span>AFIS &amp; CODIS syncd</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1 mt-1 overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 98.4%;"></div>
+</div>
+</div>
+<!-- Card 4: Lab Turnaround Time -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Lab Speed</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">timer</span>
+</div>
+<div class="my-space-xs">
+<div class="font-display-lg-mobile text-display-lg-mobile text-on-surface tracking-tight">4.2<span class="text-headline-sm font-headline-sm">h</span></div>
+<div class="flex items-center gap-1 text-secondary font-code-telemetry text-code-telemetry">
+<span class="material-symbols-outlined text-[13px]">trending_down</span>
+<span>-1.8h gain</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1 mt-1 overflow-hidden">
+<div class="bg-secondary h-full" style="width: 72%;"></div>
+</div>
+</div>
+</div>
+<!-- Horizontal Evidence Modality Breakdown -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-container">pie_chart</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Evidence Distribution</span>
+</div>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">N=1,429</span>
+</div>
+<!-- Multi-segmented Progress Bar -->
+<div class="w-full h-3 bg-surface-container-highest rounded-full flex overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 45%;" title="Biological 45%"></div>
+<div class="bg-secondary h-full" style="width: 25%;" title="Trace 25%"></div>
+<div class="bg-tertiary-container h-full" style="width: 20%;" title="Digital 20%"></div>
+<div class="bg-outline h-full" style="width: 10%;" title="Ballistics 10%"></div>
+</div>
+<!-- Modality Legend -->
+<div class="grid grid-cols-2 gap-y-1 gap-x-2 text-on-surface-variant font-code-telemetry text-code-telemetry pt-1">
+<div class="flex items-center gap-1.5 truncate">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="text-on-surface">Biological: 45%</span>
+</div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-on-surface">Trace Residue: 25%</span>
+</div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span class="text-on-surface">Cyber Evidence: 20%</span>
+</div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="text-on-surface">Ballistic: 10%</span>
+</div>
+</div>
+</div>
+<!-- Investigation Category Filter Chips -->
+<div class="flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary tracking-wide uppercase">Divisional Filters</span>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">FILTER_ID: ALL</span>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
+<button class="px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md whitespace-nowrap shadow-sm font-semibold">
+        All Cases (38)
+      </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap">
+        Homicide
+      </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap">
+        Ballistics &amp; Firearms
+      </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap">
+        Forensic Serology
+      </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap">
+        Cyber Forensics
+      </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap">
+        Cold Cases
+      </button>
+</div>
+</div>
+<!-- Recent Case Studies & Investigation Feed -->
+<div class="flex flex-col space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary">Priority Dossiers</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary-container font-code-telemetry text-code-telemetry">LIVE STREAM</span>
+</div>
+<button class="text-primary-container font-label-sm text-label-sm hover:underline flex items-center gap-0.5">
+<span>ARCHIVES</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+<!-- Case Card 1 -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-md">
+<div class="relative w-full h-36">
+<img class="w-full h-full object-cover" data-alt="Dark dramatic nighttime crime scene at a waterfront harbor warehouse with yellow police tape, cyan emergency vehicle spotlights reflection on wet asphalt pavement, forensic markers placed on industrial debris under moody deep shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1swiQ_1m6AVxBTUlWokZ8gPCBEcTIgrf-4qiwNVR-22nKoqIcZl67uG9ZQqxNYIV_31CJTo_gqVrqUk5eMq3L2jJSLd4qSM5Y8dYP3G7zdPnstFwWyZ11PzKWUpNQrzebl7Yjvo0FDUnxmEeTbk_fW4ffS4kAu75G-nN1gOVUu2fWUN02obbhWbRettRX6jMgZjkiBZbROa4Gf0dw_DgY7CLObt_a3gY9Ab2z9t8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/60 to-transparent"></div>
+<div class="absolute top-2 left-2 flex items-center gap-1.5 bg-surface-container-lowest/90 px-2 py-1 rounded">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-ping"></span>
+<span class="font-code-telemetry text-code-telemetry text-tertiary-fixed-dim">TAG-912 // ARSON</span>
+</div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface drop-shadow">Case #CR-2024-912</span>
+<span class="font-code-telemetry text-code-telemetry text-primary-container bg-surface-container-lowest/90 px-2 py-0.5 rounded">02h AGO</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col space-y-space-sm">
+<div class="flex flex-col">
+<span class="font-body-lg text-body-lg font-medium text-primary">Harbor Warehouse Arson &amp; Accelerant Residue</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">GC-MS pyrogram indicates synthetic kerosene hydrocarbons. Chain intact.</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[14px]">science</span>
+</div>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">Lead: Dr. Elena Vance</span>
+</div>
+<div class="px-2 py-1 rounded bg-surface-container-highest text-tertiary-container font-label-sm text-label-sm">
+            GC-MS Analysis
+          </div>
+</div>
+</div>
+</div>
+<!-- Case Card 2 -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-md">
+<div class="relative w-full h-36">
+<img class="w-full h-full object-cover" data-alt="Macro scientific laboratory view of a fluorescent latent fingerprint glowing under ultraviolet blue forensic light on a brushed stainless steel turnstile surface, high contrast biometric details and micro ridge bifurcation markers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMUOL1JngQoCKVyibAf4rL3AwN8nQYJtSrgDZX5fKQ-PHCrP4Xb7R5OwOutfJ5boL7MmUbz9b4QhPPnzZk7JO3UqWVlIHsop0FvrubIPkEsXDbZDmjRSq8fkx7VAcjij7C_N0yqx63_EbsGQxT2j43bItsxDoxo_sNwU06po4kt1APHwBTOcTNHeomk3e1s2qNayezzP45drjub7Jf08kyS_9SWYfTesQ-Sj2vtVU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/60 to-transparent"></div>
+<div class="absolute top-2 left-2 flex items-center gap-1.5 bg-surface-container-lowest/90 px-2 py-1 rounded">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-code-telemetry text-code-telemetry text-primary-container">TAG-884 // BIOMETRIC</span>
+</div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface drop-shadow">Case #CR-2024-884</span>
+<span class="font-code-telemetry text-code-telemetry text-primary-container bg-surface-container-lowest/90 px-2 py-0.5 rounded">05h AGO</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col space-y-space-sm">
+<div class="flex flex-col">
+<span class="font-body-lg text-body-lg font-medium text-primary">Subway Station Latent Ridge Recovery</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Level 3 Minutiae extraction matched to National Database subject #440-K.</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[14px]">badge</span>
+</div>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">Lead: Insp. Thorne</span>
+</div>
+<div class="px-2 py-1 rounded bg-primary-container/20 text-primary-container font-label-sm text-label-sm font-semibold">
+            AFIS Match Confirmed
+          </div>
+</div>
+</div>
+</div>
+<!-- Case Card 3 -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-md">
+<div class="relative w-full h-36">
+<img class="w-full h-full object-cover" data-alt="Close up analytical document examination table with high precision spectral comparator, parchment paper with vintage handwriting under specialized optical LED wavelengths revealing altered ballpoint pen ink chromatography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAce5brcuxq8z1iIqaAqbVtJkW-GKXdDBuUJp4fOWGBveJ5ii-phRONSAssLC9fVYTJSUy5IghVkdV9WB91uZKej7oaPzINroiG-JJ3Fs9F4YEXQfVwAC9s0D8IHRTLZd11GKUbVNqsUCJfL4ofpDnk8y5VMcRkkjTDItlI5VAONkoMqdUPCiyAELeVSA6gKG1_kuPRAIrwsRHNQCED80LsLnbTxBJROLzq9TrlPJw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/60 to-transparent"></div>
+<div class="absolute top-2 left-2 flex items-center gap-1.5 bg-surface-container-lowest/90 px-2 py-1 rounded">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-code-telemetry text-code-telemetry text-secondary">TAG-771 // QUESTIONED DOC</span>
+</div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface drop-shadow">Case #CR-2024-771</span>
+<span class="font-code-telemetry text-code-telemetry text-primary-container bg-surface-container-lowest/90 px-2 py-0.5 rounded">14h AGO</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col space-y-space-sm">
+<div class="flex flex-col">
+<span class="font-body-lg text-body-lg font-medium text-primary">Questioned Will &amp; Ink Chromatography</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Spectrophotometry analysis confirmed dual ink chemical composition formula.</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[14px]">smb_share</span>
+</div>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">Lead: Lab Tech Jin</span>
+</div>
+<div class="px-2 py-1 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm">
+            Spectrophotometry Verified
+          </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Action Floating HUD Section -->
+<div class="bg-surface-container-high rounded-xl p-space-md shadow-xl flex flex-col space-y-space-sm mb-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary-container">bolt</span>
+        Tactical Rapid Triggers
+      </span>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">KEY_SIG: 0x9AF</span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Action 1 -->
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded bg-primary-container text-on-primary-container font-headline-sm text-headline-sm shadow-md transition-all active:scale-[0.98]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">add_box</span>
+<span class="uppercase tracking-tight">Log New Evidence Item</span>
+</div>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<!-- Action 2 -->
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded bg-surface-container text-on-surface font-body-md text-body-md shadow-sm transition-all active:scale-[0.98]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">picture_as_pdf</span>
+<span>Generate Forensic Report PDF</span>
+</div>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">EXPORT</span>
+</button>
+<!-- Action 3 -->
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded bg-surface-container text-on-surface font-body-md text-body-md shadow-sm transition-all active:scale-[0.98]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-tertiary-container">cyclone</span>
+<span>Request Ballistics Reconstruction</span>
+</div>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">3D RUN</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for divisional filter chips
+  document.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      // Tactile visual feedback on active elements
+      if (btn.classList.contains('rounded-full')) {
+        const parent = btn.parentElement;
+        parent.querySelectorAll('button').forEach(c => {
+          c.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+          c.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        btn.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.8)]" data-active-classes="text-primary-container font-medium"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-[22px]">radar</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Overview</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-12 h-12 transition-colors text-primary-container font-medium" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">monitoring</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Dashboard</span></a><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="forensic-lab" href="#"><span class="material-symbols-outlined text-[22px]">biotech</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Lab</span></a><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="locations" href="#"><span class="material-symbols-outlined text-[22px]">share_location</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Locations</span></a><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="evidence" href="#"><span class="material-symbols-outlined text-[22px]">inventory_2</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Evidence</span></a><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="more" href="#"><span class="material-symbols-outlined text-[22px]">menu</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">More</span></a></div></nav></body></html>

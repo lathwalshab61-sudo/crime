@@ -1,0 +1,18 @@
+{
+  "name": "crimescene-hub-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CrimeScene Hub - Full Stack Forensics Platform",
+  "scripts": {
+    "dev": "concurrently -n \"backend,frontend\" -c \"yellow,cyan\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start": "concurrently -n \"backend,frontend\" -c \"yellow,cyan\" \"npm run start:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "start:backend": "npm --prefix backend start",
+    "test:backend": "npm --prefix backend test-api",
+    "build:frontend": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

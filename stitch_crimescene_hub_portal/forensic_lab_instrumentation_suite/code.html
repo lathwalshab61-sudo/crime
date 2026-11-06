@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "on-primary-container": "#00626e",
+        "inverse-on-surface": "#2c303b",
+        "error-container": "#93000a",
+        "on-tertiary-fixed": "#2a1700",
+        "primary-fixed-dim": "#00daf3",
+        "on-error-container": "#ffdad6",
+        "secondary-fixed": "#dbe1ff",
+        "on-tertiary-container": "#7e4e00",
+        "on-surface-variant": "#bac9cc",
+        "outline-variant": "#3b494c",
+        "on-tertiary-fixed-variant": "#653e00",
+        "primary-container": "#00e5ff",
+        "surface-bright": "#353944",
+        "inverse-primary": "#006875",
+        "primary-fixed": "#9cf0ff",
+        "tertiary-container": "#ffc681",
+        "secondary-fixed-dim": "#b4c5ff",
+        "on-error": "#690005",
+        "surface-container-high": "#262a34",
+        "outline": "#849396",
+        "on-secondary-fixed": "#00174b",
+        "on-surface": "#dfe2f0",
+        "error": "#ffb4ab",
+        "tertiary": "#ffe9d3",
+        "on-secondary": "#002a78",
+        "surface-container-highest": "#31353f",
+        "secondary": "#b4c5ff",
+        "surface-container": "#1b2029",
+        "surface-variant": "#31353f",
+        "surface-container-low": "#171c25",
+        "background": "#0f131d",
+        "on-background": "#dfe2f0",
+        "on-tertiary": "#472a00",
+        "tertiary-fixed": "#ffddb8",
+        "surface-container-lowest": "#0a0e17",
+        "surface": "#0f131d",
+        "secondary-container": "#0053db",
+        "surface-tint": "#00daf3",
+        "on-primary-fixed": "#001f24",
+        "tertiary-fixed-dim": "#ffb95f",
+        "on-secondary-fixed-variant": "#003ea8",
+        "on-secondary-container": "#cdd7ff",
+        "on-primary": "#00363d",
+        "surface-dim": "#0f131d",
+        "inverse-surface": "#dfe2f0",
+        "primary": "#c3f5ff",
+        "on-primary-fixed-variant": "#004f58"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "gutter-desktop": "1.5rem",
+        "space-md": "1rem",
+        "space-sm": "0.5rem",
+        "gutter": "1rem",
+        "space-xs": "0.25rem",
+        "space-lg": "1.5rem",
+        "space-2xl": "3rem",
+        "margin-tablet": "1.5rem",
+        "margin": "1rem",
+        "space-xl": "2rem",
+        "margin-desktop": "2rem"
+      },
+      "fontFamily": {
+        "code-telemetry": ["JetBrains Mono"],
+        "headline-md": ["Space Grotesk"],
+        "label-lg": ["JetBrains Mono"],
+        "headline-sm": ["Space Grotesk"],
+        "body-sm": ["Inter"],
+        "label-sm": ["JetBrains Mono"],
+        "headline-xl-mobile": ["Space Grotesk"],
+        "headline-xl": ["Space Grotesk"],
+        "body-md": ["Inter"],
+        "headline-lg": ["Space Grotesk"],
+        "label-md": ["JetBrains Mono"],
+        "body-lg": ["Inter"],
+        "display-lg": ["Space Grotesk"],
+        "display-lg-mobile": ["Space Grotesk"]
+      },
+      "fontSize": {
+        "code-telemetry": ["11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+        "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" }],
+        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+        "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }],
+        "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+        "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+        "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+        "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+        "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
+        "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }],
+        "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
+        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+      }
+    }
+  }
+};</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_20px_rgba(3,7,18,0.75)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="CrimeScene Hub Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASJ3haOULw2sHWp_dk7AqQnVxRAPJhxWir3GdpC5WFicTUa-BxQDLcrvdEd89gjuIc1c4YLUVxil5AN3VAQkt2w9KK4sHuYozxlTHu7hUI06RhBvZ19m9CtrvlaIlfbMAMSemUoD7ZNH8FE2VionTPlqPLVrIlmkZvTy8dog299tEcVwVnPhwKgQLa7Y2Sou77SL395HtBxWdXjZchaR9cUNKWarO5eWyvEDrlIvw"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">CrimeScene Hub</span><span class="px-1.5 py-0.5 rounded-DEFAULT bg-primary-container/20 text-primary-container font-label-sm text-label-sm uppercase tracking-wider">SECURE</span></div><div class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span><span class="font-code-telemetry text-code-telemetry text-on-surface-variant uppercase">FORENSIC DEPT // Forensic Lab</span></div></div></div><div class="flex items-center gap-space-xs"><button aria-label="Global Evidence Search" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><button aria-label="Investigation Telemetry Alerts" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-container"></span></button><div class="w-11 h-11 flex items-center justify-center pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvisKsrmzgZL2ygjNOH-NZ4qhTodCYVkrRpA2pFDMXvsehSn7h92cmXuCjUTzsatZIKUIt_AFPm0IRaeWqyrpknTkioXdPPv9GUXliHFjsatsboujwVZgSeLnXvytJbSzwwE_CLUpDk1WAm9HbJoDU5U--KLvZplWi-n0pDlp5c-at-BPnHVAE3iZXElNubbk5dG-mtvJmeoIKgSoCO_27u0dycb2s75QnwDb6VCg"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full px-gutter pb-space-2xl space-y-space-lg">
+<!-- Operational Status Telemetry Banner -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-md shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-highest text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+<span class="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest truncate">CENTRAL FORENSICS LAB // STATION-04</span>
+</div>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant truncate">DIAGNOSTIC STATUS: ALL ANALYZERS NOMINAL</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 shrink-0 px-2 py-1 rounded bg-surface-container-highest">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-code-telemetry text-code-telemetry text-primary-container">ONLINE</span>
+</div>
+</div>
+<!-- Header Section with Tactical Subtitle -->
+<div class="flex flex-col space-y-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">science</span>
+<span class="font-code-telemetry text-code-telemetry text-primary-container uppercase tracking-wider">MODULAR SUITE v4.12</span>
+</div>
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight">Forensic Laboratory Instrumentation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Advanced chemical, biometric, and digital analysis suites configured for high-fidelity evidentiary intake.</p>
+</div>
+<!-- Interactive Virtual Workbench Hero Card -->
+<div class="relative w-full rounded-xl bg-surface-container-high p-space-lg shadow-xl overflow-hidden group">
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col space-y-space-md relative z-10">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary-container font-label-sm text-label-sm uppercase tracking-wider">CHAIN OF CUSTODY ASSURED</span>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">ISO/IEC 17025 ACCREDITED</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Launch Virtual Forensic Workbench</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Multi-spectral workbench for interactive artifact dissection, real-time spectrometer feeds, and authenticated evidence logging.</p>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 py-2.5 px-space-md rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center gap-2 shadow-[0_0_12px_rgba(0,229,255,0.3)] active:scale-[0.98] transition-transform" id="launchWorkbenchBtn">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>INITIALIZE BENCH</span>
+</button>
+<button aria-label="Workbench settings" class="w-11 h-11 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center shrink-0 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Real-time Active Telemetry Simulation Box (Dynamic updates) -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-space-md shadow-md flex flex-col space-y-2" id="telemetryBox">
+<div class="flex items-center justify-between">
+<span class="font-code-telemetry text-code-telemetry text-primary-container flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+        SYSTEM TELEMETRY STREAM
+      </span>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant" id="telemetryHash">BLK-99824 // LAT: 42.3601</span>
+</div>
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="bg-surface-container p-2 rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">CODIS QUEUE</span>
+<span class="font-code-telemetry text-code-telemetry text-primary" id="codisStat">4 BATCHES</span>
+</div>
+<div class="bg-surface-container p-2 rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">AFIS SAMPLES</span>
+<span class="font-code-telemetry text-code-telemetry text-primary" id="afisStat">128 LIDS</span>
+</div>
+<div class="bg-surface-container p-2 rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">RAM ARMORED</span>
+<span class="font-code-telemetry text-code-telemetry text-primary">SECURE</span>
+</div>
+</div>
+</div>
+<!-- Forensic Disciplines Cards Stack -->
+<div class="flex flex-col space-y-space-md">
+<!-- 1. Biometric Fingerprint Analysis -->
+<div class="rounded-xl bg-surface-container p-space-md shadow-lg flex flex-col space-y-space-md transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">fingerprint</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Biometric Fingerprint Analysis</h3>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">AFIS / IAFIS PROTOCOL SUITE</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container/15 text-primary-container font-label-sm text-label-sm shrink-0">AFIS / IAFIS</span>
+</div>
+<!-- Technical Preview HUD Graphic -->
+<div class="relative w-full h-36 rounded-lg bg-surface-container-lowest overflow-hidden flex items-center justify-center">
+<!-- Reticle Graphic -->
+<svg class="w-28 h-28 text-primary-container opacity-80" fill="none" viewbox="0 0 100 100">
+<circle cx="50" cy="50" r="46" stroke="currentColor" stroke-dasharray="3 3" stroke-width="1"></circle>
+<circle cx="50" cy="50" r="32" stroke="currentColor" stroke-width="1.5"></circle>
+<circle cx="50" cy="50" r="18" stroke="currentColor" stroke-width="1"></circle>
+<path d="M50 0 V100 M0 50 H100" stroke="currentColor" stroke-dasharray="2 4" stroke-width="0.75"></path>
+<!-- Minutiae point highlights -->
+<circle class="animate-ping" cx="42" cy="38" fill="#00e5ff" r="2.5"></circle>
+<circle cx="58" cy="54" fill="#00e5ff" r="2.5"></circle>
+<circle cx="48" cy="62" fill="#00e5ff" r="2.5"></circle>
+<circle cx="36" cy="50" fill="#00e5ff" r="2.5"></circle>
+</svg>
+<div class="absolute bottom-2 left-2 flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container-high/90 backdrop-blur-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-code-telemetry text-code-telemetry text-on-surface" id="minutiaeCount">EXTRACTED MINUTIAE: 42 PTS</span>
+</div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-high/90 text-primary-container font-code-telemetry text-code-telemetry">
+          RES: 1200 DPI
+        </div>
+</div>
+<!-- Feature Matrix -->
+<div class="grid grid-cols-2 gap-2 text-on-surface">
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">radar</span>
+<span class="font-body-sm text-body-sm truncate">Ridge Bifurcation Detection</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">grain</span>
+<span class="font-body-sm text-body-sm truncate">Poroscopy Micro-Mapping</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">account_tree</span>
+<span class="font-body-sm text-body-sm truncate">Henry Classification Class</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">layers</span>
+<span class="font-body-sm text-body-sm truncate">Level 1-3 Minutiae Vector</span>
+</div>
+</div>
+<!-- Interactive Action Trigger -->
+<button class="w-full py-2.5 px-space-md rounded bg-surface-container-high text-primary hover:text-primary-container flex items-center justify-center gap-2 font-label-md text-label-md transition-colors active:bg-surface-container-highest" id="scanMinutiaeBtn">
+<span class="material-symbols-outlined text-[18px]">document_scanner</span>
+<span id="scanBtnText">RUN MINUTIAE SCAN &amp; MATCH</span>
+</button>
+</div>
+<!-- 2. DNA & STR Profiling Suite -->
+<div class="rounded-xl bg-surface-container p-space-md shadow-lg flex flex-col space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">strikethrough_s</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">DNA &amp; STR Profiling Suite</h3>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">HIGH RESOLUTION GENOMIC MATRIX</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-container/20 text-on-tertiary-container font-label-sm text-label-sm shrink-0">CODIS COMPLIANT</span>
+</div>
+<!-- Electrophoresis Visualizer Simulation -->
+<div class="w-full bg-surface-container-lowest p-space-sm rounded-lg flex flex-col space-y-1.5">
+<div class="flex items-center justify-between text-on-surface-variant font-code-telemetry text-code-telemetry">
+<span>GEL ELECTROPHORESIS 24-LOCI</span>
+<span class="text-primary-container">MATCH: 99.98%</span>
+</div>
+<!-- Gel lane bars -->
+<div class="grid grid-cols-8 gap-1.5 h-16 items-end p-1.5 bg-surface-container-low rounded">
+<div class="h-full bg-surface-container-highest rounded-sm flex flex-col justify-around py-1">
+<div class="h-1 bg-primary-container rounded"></div>
+<div class="h-1.5 bg-primary-container/80 rounded"></div>
+<div class="h-1 bg-primary-container/40 rounded"></div>
+</div>
+<div class="h-full bg-surface-container-highest rounded-sm flex flex-col justify-around py-1">
+<div class="h-1 bg-primary-container/30 rounded"></div>
+<div class="h-2 bg-primary-container rounded"></div>
+<div class="h-1 bg-primary-container/60 rounded"></div>
+</div>
+<div class="h-full bg-surface-container-highest rounded-sm flex flex-col justify-around py-1">
+<div class="h-1.5 bg-primary-container rounded"></div>
+<div class="h-1 bg-primary-container/30 rounded"></div>
+<div class="h-2 bg-primary-container rounded"></div>
+</div>
+<div class="h-full bg-surface-container-highest rounded-sm flex flex-col justify-around py-1">
+<div class="h-2 bg-primary-container/90 rounded"></div>
+<div class="h-1 bg-primary-container/20 rounded"></div>
+<div class="h-1 bg-primary-container rounded"></div>
+</div>
+<div class="h-full bg-surface-container-highest rounded-sm flex flex-col justify-around py-1">
+<div class="h-1 bg-primary-container/40 rounded"></div>
+<div class="h-1.5 bg-primary-container rounded"></div>
+<div class="h-1 bg-primary-container/50 rounded"></div>
+</div>
+<div class="h-full bg-surface-container-highest rounded-sm flex flex-col justify-around py-1">
+<div class="h-2 bg-primary-container rounded"></div>
+<div class="h-1 bg-primary-container/70 rounded"></div>
+<div class="h-1.5 bg-primary-container rounded"></div>
+</div>
+<div class="h-full bg-surface-container-highest rounded-sm flex flex-col justify-around py-1">
+<div class="h-1 bg-primary-container/30 rounded"></div>
+<div class="h-1 bg-primary-container/40 rounded"></div>
+<div class="h-2 bg-primary-container rounded"></div>
+</div>
+<div class="h-full bg-surface-container-highest rounded-sm flex flex-col justify-around py-1">
+<div class="h-1.5 bg-primary-container rounded"></div>
+<div class="h-1 bg-primary-container rounded"></div>
+<div class="h-1 bg-primary-container/50 rounded"></div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 text-on-surface">
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">cyclone</span>
+<span class="font-body-sm text-body-sm truncate">PCR Thermal Amplification</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">bar_chart</span>
+<span class="font-body-sm text-body-sm truncate">Short Tandem Repeat Match</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">blur_on</span>
+<span class="font-body-sm text-body-sm truncate">mtDNA Lineage Analysis</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">verified_user</span>
+<span class="font-body-sm text-body-sm truncate">CODIS Database Sync</span>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-md rounded bg-surface-container-high text-primary flex items-center justify-center gap-2 font-label-md text-label-md transition-colors active:bg-surface-container-highest">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+<span>AUDIT 24-LOCUS AMELOGENIN PROFILE</span>
+</button>
+</div>
+<!-- 3. Serology & Bloodstain Pattern Analysis (BPA) -->
+<div class="rounded-xl bg-surface-container p-space-md shadow-lg flex flex-col space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">bloodtype</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Serology &amp; Bloodstain Pattern</h3>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">FLUID KINEMATICS &amp; CHEMIC PHENOTYPE</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container/15 text-primary-container font-label-sm text-label-sm shrink-0">CHEMILUMINESCENCE</span>
+</div>
+<!-- Kinematics Trajectory Mini-Widget -->
+<div class="w-full rounded-lg bg-surface-container-lowest p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">IMPACT ANGLE VECTORS</span>
+<span class="font-code-telemetry text-code-telemetry text-primary">θ = arcsin(W/L) : 34.2° ± 0.4°</span>
+</div>
+<div class="px-2 py-1 rounded bg-surface-container-high text-primary-container font-code-telemetry text-code-telemetry">
+          SPATTER: HIGH VELOCITY
+        </div>
+</div>
+<div class="grid grid-cols-2 gap-2 text-on-surface">
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">flare</span>
+<span class="font-body-sm text-body-sm truncate">Luminol Catalytic React</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">science</span>
+<span class="font-body-sm text-body-sm truncate">Kastle-Meyer Presumptive</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">straighten</span>
+<span class="font-body-sm text-body-sm truncate">3D Stringing Trajectory</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">adjust</span>
+<span class="font-body-sm text-body-sm truncate">Origin Point Triangulation</span>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-md rounded bg-surface-container-high text-primary flex items-center justify-center gap-2 font-label-md text-label-md transition-colors active:bg-surface-container-highest">
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+<span>CALCULATE IMPACT TRAJECTORY MATRIX</span>
+</button>
+</div>
+<!-- 4. Questioned Document Examination -->
+<div class="rounded-xl bg-surface-container p-space-md shadow-lg flex flex-col space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">description</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Questioned Document Examination</h3>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">INFRARED &amp; CHEMICAL FORENSICS</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container/15 text-primary-container font-label-sm text-label-sm shrink-0">SPECTRAL COMPARATOR</span>
+</div>
+<!-- Spectral Bandwidth Bar -->
+<div class="w-full bg-surface-container-lowest p-space-sm rounded-lg flex flex-col space-y-1">
+<div class="flex justify-between font-code-telemetry text-code-telemetry text-on-surface-variant">
+<span>VSC 8000 MULTI-SPECTRAL</span>
+<span class="text-primary-container">400nm - 1000nm IR</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden flex">
+<div class="h-full bg-secondary w-1/4"></div>
+<div class="h-full bg-primary-container w-1/3"></div>
+<div class="h-full bg-primary-fixed-dim w-1/4"></div>
+<div class="h-full bg-primary w-1/6"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 text-on-surface">
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">visibility</span>
+<span class="font-body-sm text-body-sm truncate">VSC 8000 Spectral Analysis</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">colorize</span>
+<span class="font-body-sm text-body-sm truncate">TLC Ink Chromatography</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">texture</span>
+<span class="font-body-sm text-body-sm truncate">ESDA Indented Writing</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">history_edu</span>
+<span class="font-body-sm text-body-sm truncate">Typography &amp; Seal Verification</span>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-md rounded bg-surface-container-high text-primary flex items-center justify-center gap-2 font-label-md text-label-md transition-colors active:bg-surface-container-highest">
+<span class="material-symbols-outlined text-[18px]">filter_vintage</span>
+<span>COMMENCE INFRARED INK ABSORPTION TEST</span>
+</button>
+</div>
+<!-- 5. Digital Forensics & Incident Response -->
+<div class="rounded-xl bg-surface-container p-space-md shadow-lg flex flex-col space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">terminal</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Digital Forensics &amp; Incident Response</h3>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">BIT-STREAM IMAGE EVIDENCE EXTRACTION</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container/15 text-primary-container font-label-sm text-label-sm shrink-0">WRITE-BLOCKER ARMORED</span>
+</div>
+<!-- Hash Validation Display Box -->
+<div class="w-full rounded-lg bg-surface-container-lowest p-space-sm flex flex-col space-y-1">
+<div class="flex items-center justify-between font-code-telemetry text-code-telemetry">
+<span class="text-on-surface-variant">TARGET SHA-256 SUM:</span>
+<span class="text-primary-container">MATCH VERIFIED</span>
+</div>
+<div class="font-code-telemetry text-code-telemetry text-on-surface truncate bg-surface-container-high p-1.5 rounded">
+          e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+        </div>
+</div>
+<div class="grid grid-cols-2 gap-2 text-on-surface">
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">lock</span>
+<span class="font-body-sm text-body-sm truncate">Hardware Write-Block Protection</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">smartphone</span>
+<span class="font-body-sm text-body-sm truncate">Cellebrite UFED Mobile Dump</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">memory</span>
+<span class="font-body-sm text-body-sm truncate">Volatile RAM Artifact Capture</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high/60 p-2 rounded">
+<span class="material-symbols-outlined text-primary-container text-[16px]">enhanced_encryption</span>
+<span class="font-body-sm text-body-sm truncate">Steganography Pixel Decoding</span>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-md rounded bg-surface-container-high text-primary flex items-center justify-center gap-2 font-label-md text-label-md transition-colors active:bg-surface-container-highest">
+<span class="material-symbols-outlined text-[18px]">security</span>
+<span>VERIFY CRIME SCENE PHYSICAL DISK IMAGE</span>
+</button>
+</div>
+</div>
+<!-- Chain of Custody Protocol Notice Footer Card -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-md shadow-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[20px] shrink-0 mt-0.5">policy</span>
+<div class="flex flex-col space-y-1">
+<span class="font-label-md text-label-md text-on-surface">Digital Chain of Custody Cryptographic Ledger Active</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Every reagent reaction, spectrometer reading, and extraction binary is instantly signed with an SHA-512 custody hash and recorded into the jurisdictional courtroom evidentiary vault.</p>
+</div>
+</div>
+</div>
+<script>
+  // Interactive Minutiae Scan Trigger Simulation
+  const scanBtn = document.getElementById('scanMinutiaeBtn');
+  const scanText = document.getElementById('scanBtnText');
+  const minutiaeCount = document.getElementById('minutiaeCount');
+  let isScanning = false;
+
+  if (scanBtn) {
+    scanBtn.addEventListener('click', () => {
+      if (isScanning) return;
+      isScanning = true;
+      scanText.textContent = 'EXTRACTING AFIS MINUTIAE...';
+      minutiaeCount.textContent = 'ANALYZING RIDGE DENSITY...';
+      
+      setTimeout(() => {
+        const count = Math.floor(Math.random() * 20) + 48;
+        minutiaeCount.textContent = `MATCH CONFIRMED: ${count} MINUTIAE PTS`;
+        scanText.textContent = 'SCAN COMPLETE • AFIS COINCIDENCE 99.4%';
+        setTimeout(() => {
+          scanText.textContent = 'RUN MINUTIAE SCAN & MATCH';
+          isScanning = false;
+        }, 3000);
+      }, 1200);
+    });
+  }
+
+  // Interactive Virtual Workbench Initialize Button
+  const launchBtn = document.getElementById('launchWorkbenchBtn');
+  if (launchBtn) {
+    launchBtn.addEventListener('click', () => {
+      const orig = launchBtn.innerHTML;
+      launchBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>CALIBRATING WORKBENCH...</span>';
+      setTimeout(() => {
+        launchBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span><span>WORKBENCH ENGAGED</span>';
+        setTimeout(() => {
+          launchBtn.innerHTML = orig;
+        }, 2500);
+      }, 1000);
+    });
+  }
+
+  // Simulated live telemetry loop
+  const hashes = [
+    'BLK-99824 // LAT: 42.3601',
+    'BLK-99825 // SEC: CRYPTO-NODE',
+    'BLK-99826 // CODIS-BATCH 14',
+    'BLK-99827 // GC-MS CHROMATOGRAPHY'
+  ];
+  let hashIndex = 0;
+  setInterval(() => {
+    hashIndex = (hashIndex + 1) % hashes.length;
+    const telemetryHash = document.getElementById('telemetryHash');
+    if (telemetryHash) telemetryHash.textContent = hashes[hashIndex];
+  }, 4500);
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.8)]" data-active-classes="text-primary-container font-medium"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-[22px]">radar</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Overview</span></a><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">monitoring</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Dashboard</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-12 h-12 transition-colors text-primary-container font-medium" data-path="forensic-lab" href="#"><span class="material-symbols-outlined text-[22px]">biotech</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Lab</span></a><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="locations" href="#"><span class="material-symbols-outlined text-[22px]">share_location</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Locations</span></a><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="evidence" href="#"><span class="material-symbols-outlined text-[22px]">inventory_2</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Evidence</span></a><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="more" href="#"><span class="material-symbols-outlined text-[22px]">menu</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">More</span></a></div></nav></body></html>

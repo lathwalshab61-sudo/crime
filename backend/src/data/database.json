@@ -1,0 +1,318 @@
+{
+  "cases": [
+    {
+      "id": "CR-2024-912",
+      "tag": "TAG-912 // ARSON",
+      "time": "02h AGO",
+      "title": "Harbor Warehouse Arson & Accelerant Residue",
+      "desc": "GC-MS pyrogram indicates synthetic kerosene hydrocarbons. Chain intact.",
+      "lead": "Dr. Elena Vance",
+      "category": "Arson",
+      "filterCategory": "Homicide",
+      "status": "ACTIVE",
+      "badge": "GC-MS Analysis",
+      "badgeColor": "text-tertiary-container",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA1swiQ_1m6AVxBTUlWokZ8gPCBEcTIgrf-4qiwNVR-22nKoqIcZl67uG9ZQqxNYIV_31CJTo_gqVrqUk5eMq3L2jJSLd4qSM5Y8dYP3G7zdPnstFwWyZ11PzKWUpNQrzebl7Yjvo0FDUnxmEeTbk_fW4ffS4kAu75G-nN1gOVUu2fWUN02obbhWbRettRX6jMgZjkiBZbROa4Gf0dw_DgY7CLObt_a3gY9Ab2z9t8",
+      "dateLogged": "2026-11-06T08:30:00Z",
+      "evidenceCount": 7
+    },
+    {
+      "id": "CR-2024-884",
+      "tag": "TAG-884 // BIOMETRIC",
+      "time": "05h AGO",
+      "title": "Subway Station Latent Ridge Recovery",
+      "desc": "Level 3 Minutiae extraction matched to National Database subject #440-K.",
+      "lead": "Insp. Thorne",
+      "category": "Biometrics",
+      "filterCategory": "Cold Cases",
+      "status": "MATCH_FOUND",
+      "badge": "AFIS Match Confirmed",
+      "badgeColor": "text-primary-container bg-primary-container/20 font-semibold",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAMUOL1JngQoCKVyibAf4rL3AwN8nQYJtSrgDZX5fKQ-PHCrP4Xb7R5OwOutfJ5boL7MmUbz9b4QhPPnzZk7JO3UqWVlIHsop0FvrubIPkEsXDbZDmjRSq8fkx7VAcjij7C_N0yqx63_EbsGQxT2j43bItsxDoxo_sNwU06po4kt1APHwBTOcTNHeomk3e1s2qNayezzP45drjub7Jf08kyS_9SWYfTesQ-Sj2vtVU",
+      "dateLogged": "2026-11-06T05:15:00Z",
+      "evidenceCount": 12
+    },
+    {
+      "id": "CR-2024-771",
+      "tag": "TAG-771 // QUESTIONED DOC",
+      "time": "14h AGO",
+      "title": "Questioned Will & Ink Chromatography",
+      "desc": "Spectrophotometry analysis confirmed dual ink chemical composition formula.",
+      "lead": "Lab Tech Jin",
+      "category": "Documents",
+      "filterCategory": "Forensic Serology",
+      "status": "IN_ANALYSIS",
+      "badge": "Spectrophotometry Verified",
+      "badgeColor": "text-secondary",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAce5brcuxq8z1iIqaAqbVtJkW-GKXdDBuUJp4fOWGBveJ5ii-phRONSAssLC9fVYTJSUy5IghVkdV9WB91uZKej7oaPzINroiG-JJ3Fs9F4YEXQfVwAC9s0D8IHRTLZd11GKUbVNqsUCJfL4ofpDnk8y5VMcRkkjTDItlI5VAONkoMqdUPCiyAELeVSA6gKG1_kuPRAIrwsRHNQCED80LsLnbTxBJROLzq9TrlPJw",
+      "dateLogged": "2026-11-05T20:00:00Z",
+      "evidenceCount": 4
+    },
+    {
+      "id": "CR-2024-901",
+      "tag": "TAG-901 // BALLISTICS",
+      "time": "1d AGO",
+      "title": "Downtown Vault Ballistics Trajectory",
+      "desc": "3D laser stringing confirmed 9mm trajectory impact angle at 34.2 degrees.",
+      "lead": "Det. Miller",
+      "category": "Ballistics",
+      "filterCategory": "Ballistics & Firearms",
+      "status": "RESOLVED",
+      "badge": "Trajectory Confirmed",
+      "badgeColor": "text-primary",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA1swiQ_1m6AVxBTUlWokZ8gPCBEcTIgrf-4qiwNVR-22nKoqIcZl67uG9ZQqxNYIV_31CJTo_gqVrqUk5eMq3L2jJSLd4qSM5Y8dYP3G7zdPnstFwWyZ11PzKWUpNQrzebl7Yjvo0FDUnxmEeTbk_fW4ffS4kAu75G-nN1gOVUu2fWUN02obbhWbRettRX6jMgZjkiBZbROa4Gf0dw_DgY7CLObt_a3gY9Ab2z9t8",
+      "dateLogged": "2026-11-05T10:00:00Z",
+      "evidenceCount": 5
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EV-001",
+      "tag": "TAG-0824",
+      "name": "9mm Spent Cartridge Casing",
+      "location": "Ballistics Lab // Shelf B-12",
+      "caseId": "CR-2024-912",
+      "status": "Secured in Vault",
+      "statusType": "secured",
+      "hash": "0x8f2a1b94e820c7d4e32158dfb6920aef1248ab93c781640192a8374be8f12456",
+      "category": "Ballistics",
+      "collectedBy": "Det. Miller",
+      "collectedDate": "2026-11-04 14:22",
+      "notes": "Recovered near Pier 44 warehouse door. Caliber stamped 9x19 Parabellum."
+    },
+    {
+      "id": "EV-002",
+      "tag": "TAG-0825",
+      "name": "Partial Latent Print on Glass",
+      "location": "Biometrics Lab // AFIS Pending",
+      "caseId": "CR-2024-884",
+      "status": "Processing",
+      "statusType": "processing",
+      "hash": "0x3c719e04f9810237bb920147ae583921bdfa8492041285093129840134918234",
+      "category": "Biometrics",
+      "collectedBy": "Insp. Thorne",
+      "collectedDate": "2026-11-05 09:10",
+      "notes": "Cyanoacrylate fumed; 48 minutiae points identified."
+    },
+    {
+      "id": "EV-003",
+      "tag": "TAG-0826",
+      "name": "Charred Timber Accelerant Sample",
+      "location": "Chemistry Lab // GC-MS Rack 3",
+      "caseId": "CR-2024-912",
+      "status": "Analysis Complete",
+      "statusType": "completed",
+      "hash": "0x7d912a5598104820beac39182049182038910481023910293810293810293812",
+      "category": "Chemical",
+      "collectedBy": "Dr. Vance",
+      "collectedDate": "2026-11-05 16:45",
+      "notes": "Hydrocarbon signature matches synthetic diesel/kerosene fraction."
+    },
+    {
+      "id": "EV-004",
+      "tag": "TAG-0827",
+      "name": "NVMe 512GB Write-Blocked SSD",
+      "location": "Cyber Suite // Armored Safe 01",
+      "caseId": "CR-2024-771",
+      "status": "Secured in Vault",
+      "statusType": "secured",
+      "hash": "0xe3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "Digital",
+      "collectedBy": "Lab Tech Jin",
+      "collectedDate": "2026-11-06 08:30",
+      "notes": "Bit-stream image verified. Hardware write-blocker active."
+    },
+    {
+      "id": "EV-005",
+      "tag": "TAG-0828",
+      "name": "400nm-1000nm Infrared Ink Chromatography Sheet",
+      "location": "Questioned Documents // Drawer 02",
+      "caseId": "CR-2024-771",
+      "status": "Secured in Vault",
+      "statusType": "secured",
+      "hash": "0x4981fa0931bc4028471928401928301928401928301928301928301928301928",
+      "category": "Documents",
+      "collectedBy": "Dr. Vance",
+      "collectedDate": "2026-11-06 09:15",
+      "notes": "Dual ink formula revealed at 850nm IR light absorption."
+    }
+  ],
+  "locations": {
+    "alpha": {
+      "code": "ALPHA-1",
+      "id": "SCENE #NYC-2024-098",
+      "name": "Northside Docks - Pier 44",
+      "coord": "LAT: 40.7128° N | LONG: -74.0060° W",
+      "statusPill": "SEALED",
+      "statusClass": "bg-primary-container/15 text-primary-container",
+      "statusDesc": "PERIMETER SECURED - LUMINOL REAGENTS DEPLOYED. CHAIN OF CUSTODY INTEGRITY: 100%.",
+      "temp": "14°C",
+      "humidity": "62%",
+      "wind": "4 kt NW",
+      "surfaceTemp": "11.2°C",
+      "dewPoint": "7°C",
+      "windVector": "NW 320°",
+      "evidenceText": "7 Evidence Items",
+      "evidenceTags": [
+        "#EV-01",
+        "#EV-02",
+        "#EV-03",
+        "#EV-04",
+        "#EV-05",
+        "#EV-06",
+        "#EV-07"
+      ],
+      "spheres": "14 High-Res Spheres",
+      "lidar": "3 LiDAR 3D Meshes",
+      "lead": "Detective Miller",
+      "unit": "CSI Field Recon Unit 4",
+      "quick": "ALPHA-1: PERIMETER SEALED // LUMINOL ACTIVE",
+      "volumetricDensity": "348.6 m³",
+      "confidenceScore": "99.94%"
+    },
+    "bravo": {
+      "code": "BRAVO-2",
+      "id": "SCENE #NYC-2024-102",
+      "name": "Apex Biochemical Research Lab",
+      "coord": "LAT: 40.7484° N | LONG: -73.9857° W",
+      "statusPill": "HAZMAT L2",
+      "statusClass": "bg-tertiary-container/20 text-tertiary-fixed-dim",
+      "statusDesc": "CHAIN OF CUSTODY ACTIVE - HAZMAT LEVEL 2 BIOHAZARD PROTOCOLS IN EFFECT.",
+      "temp": "19°C",
+      "humidity": "41%",
+      "wind": "0 kt CALM",
+      "surfaceTemp": "18.0°C",
+      "dewPoint": "5°C",
+      "windVector": "CALM 0°",
+      "evidenceText": "12 Evidence Items",
+      "evidenceTags": [
+        "#EV-10",
+        "#EV-11",
+        "#EV-12",
+        "#EV-13",
+        "#EV-14",
+        "#EV-15",
+        "#EV-16"
+      ],
+      "spheres": "26 High-Res Spheres",
+      "lidar": "5 LiDAR 3D Meshes",
+      "lead": "Dr. Evelyn Vance",
+      "unit": "Hazmat Forensic Division",
+      "quick": "BRAVO-2: ACTIVE CHAIN // BIO-SAFETY SEAL",
+      "volumetricDensity": "512.4 m³",
+      "confidenceScore": "99.98%"
+    },
+    "charlie": {
+      "code": "CHARLIE-3",
+      "id": "SCENE #NYC-2024-089",
+      "name": "Old Town Abandoned Vault",
+      "coord": "LAT: 40.7061° N | LONG: -74.0089° W",
+      "statusPill": "BALLISTICS",
+      "statusClass": "bg-secondary-container/30 text-secondary",
+      "statusDesc": "BALLISTICS TRAJECTORY RECONSTRUCTION IN PROGRESS - LASER SPECTROMETRY LOGGED.",
+      "temp": "9°C",
+      "humidity": "78%",
+      "wind": "1 kt SE",
+      "surfaceTemp": "8.4°C",
+      "dewPoint": "6°C",
+      "windVector": "SE 140°",
+      "evidenceText": "5 Evidence Items",
+      "evidenceTags": [
+        "#EV-21",
+        "#EV-22",
+        "#EV-23",
+        "#EV-24",
+        "#EV-25"
+      ],
+      "spheres": "9 High-Res Spheres",
+      "lidar": "2 LiDAR 3D Meshes",
+      "lead": "Investigator S. Thorne",
+      "unit": "Ballistics Recon Squad",
+      "quick": "CHARLIE-3: TRAJECTORY SCAN // 5 SHELLS FOUND",
+      "volumetricDensity": "210.0 m³",
+      "confidenceScore": "99.91%"
+    }
+  },
+  "kpis": {
+    "activeCases": {
+      "value": 38,
+      "change": "+12% mo/mo",
+      "sparkline": [
+        18,
+        14,
+        19,
+        8,
+        11,
+        3,
+        2
+      ]
+    },
+    "evidenceLogs": {
+      "value": 1429,
+      "chainOfCustodyPercent": 100
+    },
+    "matchRate": {
+      "value": "98.4%",
+      "syncedDatabases": [
+        "AFIS",
+        "CODIS",
+        "NGI"
+      ]
+    },
+    "turnaroundTime": {
+      "value": "4.2h",
+      "gain": "-1.8h gain",
+      "progress": 72
+    },
+    "evidenceDistribution": {
+      "biological": 45,
+      "traceResidue": 25,
+      "cyberEvidence": 20,
+      "ballistic": 10
+    }
+  },
+  "telemetryLogs": [
+    {
+      "id": 1793943567683,
+      "tag": "REPORT_GEN",
+      "text": "Forensic dossier REP-ISO-567682 generated for CR-2024-912",
+      "time": "11:09:27 am"
+    },
+    {
+      "id": 1793943567649,
+      "tag": "AFIS_SCAN",
+      "text": "AFIS scan complete: 49 pts (98.65% match)",
+      "time": "11:09:27 am"
+    },
+    {
+      "id": 1793943272073,
+      "tag": "REPORT_GEN",
+      "text": "Forensic dossier REP-ISO-272072 generated for CR-2024-912",
+      "time": "11:04:32 am"
+    },
+    {
+      "id": 1793943271987,
+      "tag": "AFIS_SCAN",
+      "text": "AFIS scan complete: 58 pts (98.65% match)",
+      "time": "11:04:31 am"
+    },
+    {
+      "id": 1,
+      "tag": "AUTH",
+      "text": "Terminal unlocked by badge #CS-9042",
+      "time": "10:32:01"
+    },
+    {
+      "id": 2,
+      "tag": "AFIS",
+      "text": "Latent print vector matched with CODIS record",
+      "time": "10:33:14"
+    },
+    {
+      "id": 3,
+      "tag": "SPECTRA",
+      "text": "785nm Raman analysis: Synthetic accelerant detected",
+      "time": "10:35:40"
+    }
+  ]
+}

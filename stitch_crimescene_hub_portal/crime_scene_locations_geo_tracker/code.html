@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "on-primary-container": "#00626e",
+        "inverse-on-surface": "#2c303b",
+        "error-container": "#93000a",
+        "on-tertiary-fixed": "#2a1700",
+        "primary-fixed-dim": "#00daf3",
+        "on-error-container": "#ffdad6",
+        "secondary-fixed": "#dbe1ff",
+        "on-tertiary-container": "#7e4e00",
+        "on-surface-variant": "#bac9cc",
+        "outline-variant": "#3b494c",
+        "on-tertiary-fixed-variant": "#653e00",
+        "primary-container": "#00e5ff",
+        "surface-bright": "#353944",
+        "inverse-primary": "#006875",
+        "primary-fixed": "#9cf0ff",
+        "tertiary-container": "#ffc681",
+        "secondary-fixed-dim": "#b4c5ff",
+        "on-error": "#690005",
+        "surface-container-high": "#262a34",
+        "outline": "#849396",
+        "on-secondary-fixed": "#00174b",
+        "on-surface": "#dfe2f0",
+        "error": "#ffb4ab",
+        "tertiary": "#ffe9d3",
+        "on-secondary": "#002a78",
+        "surface-container-highest": "#31353f",
+        "secondary": "#b4c5ff",
+        "surface-container": "#1b2029",
+        "surface-variant": "#31353f",
+        "surface-container-low": "#171c25",
+        "background": "#0f131d",
+        "on-background": "#dfe2f0",
+        "on-tertiary": "#472a00",
+        "tertiary-fixed": "#ffddb8",
+        "surface-container-lowest": "#0a0e17",
+        "surface": "#0f131d",
+        "secondary-container": "#0053db",
+        "surface-tint": "#00daf3",
+        "on-primary-fixed": "#001f24",
+        "tertiary-fixed-dim": "#ffb95f",
+        "on-secondary-fixed-variant": "#003ea8",
+        "on-secondary-container": "#cdd7ff",
+        "on-primary": "#00363d",
+        "surface-dim": "#0f131d",
+        "inverse-surface": "#dfe2f0",
+        "primary": "#c3f5ff",
+        "on-primary-fixed-variant": "#004f58"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "gutter-desktop": "1.5rem",
+        "space-md": "1rem",
+        "space-sm": "0.5rem",
+        "gutter": "1rem",
+        "space-xs": "0.25rem",
+        "space-lg": "1.5rem",
+        "space-2xl": "3rem",
+        "margin-tablet": "1.5rem",
+        "margin": "1rem",
+        "space-xl": "2rem",
+        "margin-desktop": "2rem"
+      },
+      "fontFamily": {
+        "code-telemetry": ["JetBrains Mono"],
+        "headline-md": ["Space Grotesk"],
+        "label-lg": ["JetBrains Mono"],
+        "headline-sm": ["Space Grotesk"],
+        "body-sm": ["Inter"],
+        "label-sm": ["JetBrains Mono"],
+        "headline-xl-mobile": ["Space Grotesk"],
+        "headline-xl": ["Space Grotesk"],
+        "body-md": ["Inter"],
+        "headline-lg": ["Space Grotesk"],
+        "label-md": ["JetBrains Mono"],
+        "body-lg": ["Inter"],
+        "display-lg": ["Space Grotesk"],
+        "display-lg-mobile": ["Space Grotesk"]
+      },
+      "fontSize": {
+        "code-telemetry": ["11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+        "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" }],
+        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+        "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }],
+        "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+        "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+        "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+        "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+        "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
+        "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }],
+        "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
+        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+      }
+    }
+  }
+};</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_20px_rgba(3,7,18,0.75)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="CrimeScene Hub Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASJ3haOULw2sHWp_dk7AqQnVxRAPJhxWir3GdpC5WFicTUa-BxQDLcrvdEd89gjuIc1c4YLUVxil5AN3VAQkt2w9KK4sHuYozxlTHu7hUI06RhBvZ19m9CtrvlaIlfbMAMSemUoD7ZNH8FE2VionTPlqPLVrIlmkZvTy8dog299tEcVwVnPhwKgQLa7Y2Sou77SL395HtBxWdXjZchaR9cUNKWarO5eWyvEDrlIvw"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">CrimeScene Hub</span><span class="px-1.5 py-0.5 rounded-DEFAULT bg-primary-container/20 text-primary-container font-label-sm text-label-sm uppercase tracking-wider">SECURE</span></div><div class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span><span class="font-code-telemetry text-code-telemetry text-on-surface-variant uppercase">FORENSIC DEPT // Locations</span></div></div></div><div class="flex items-center gap-space-xs"><button aria-label="Global Evidence Search" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><button aria-label="Investigation Telemetry Alerts" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-container"></span></button><div class="w-11 h-11 flex items-center justify-center pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvisKsrmzgZL2ygjNOH-NZ4qhTodCYVkrRpA2pFDMXvsehSn7h92cmXuCjUTzsatZIKUIt_AFPm0IRaeWqyrpknTkioXdPPv9GUXliHFjsatsboujwVZgSeLnXvytJbSzwwE_CLUpDk1WAm9HbJoDU5U--KLvZplWi-n0pDlp5c-at-BPnHVAE3iZXElNubbk5dG-mtvJmeoIKgSoCO_27u0dycb2s75QnwDb6VCg"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full pb-6 space-y-4">
+<!-- Sub-header & Status Strip -->
+<div class="px-margin flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">share_location</span>
+<h1 class="font-headline-md text-headline-md text-primary tracking-tight">Tactical Geo-Tracker</h1>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-primary-container/15 text-primary-container font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span>
+        LiDAR Telemetry
+      </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-telemetry text-code-telemetry bg-surface-container-low px-3 py-1.5 rounded-DEFAULT">
+<span>GRID: 40.7128° N, 74.0060° W</span>
+<span class="text-tertiary-fixed-dim">SAT-LINK: LOCK-9 (99.8%)</span>
+</div>
+</div>
+<!-- Filter Toggles (Pill Selectors) -->
+<div class="px-margin flex items-center gap-2 overflow-x-auto no-scrollbar">
+<button class="whitespace-nowrap px-3 py-1.5 rounded-DEFAULT bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold uppercase tracking-wider shadow-[0_0_12px_rgba(0,229,255,0.3)] transition-all" id="filter-all" onclick="filterScenes('all')">
+      All Active (3)
+    </button>
+<button class="whitespace-nowrap px-3 py-1.5 rounded-DEFAULT bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider hover:text-primary transition-all" id="filter-cold" onclick="filterScenes('cold')">
+      Cold Cases (12)
+    </button>
+<button class="whitespace-nowrap px-3 py-1.5 rounded-DEFAULT bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider hover:text-primary transition-all" id="filter-transit" onclick="filterScenes('transit')">
+      Courier Transit (2)
+    </button>
+</div>
+<!-- Interactive Tactical Map Canvas Box -->
+<div class="px-margin">
+<div class="relative w-full h-72 rounded-lg bg-surface-container-lowest overflow-hidden shadow-[0_4px_20px_rgba(3,7,18,0.85)] flex flex-col justify-between p-3 select-none">
+<!-- Coordinate Crosshair Backdrop / SVG HUD -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="32" id="tacticalGrid" patternunits="userSpaceOnUse" width="32">
+<path d="M 32 0 L 0 0 0 32" fill="none" stroke="#262a34" stroke-width="0.8"></path>
+<circle cx="16" cy="16" fill="#00daf3" opacity="0.4" r="0.8"></circle>
+</pattern>
+</defs>
+<rect fill="url(#tacticalGrid)" height="100%" width="100%"></rect>
+<!-- Radar Scanning Wave Effect -->
+<circle cx="50%" cy="48%" fill="none" opacity="0.45" r="65" stroke="#00e5ff" stroke-dasharray="4 6" stroke-width="1"></circle>
+<circle cx="50%" cy="48%" fill="none" opacity="0.25" r="110" stroke="#00e5ff" stroke-dasharray="2 8" stroke-width="0.75"></circle>
+<line opacity="0.3" stroke="#00e5ff" stroke-dasharray="2 4" stroke-width="0.5" x1="0" x2="100%" y1="48%" y2="48%"></line>
+<line opacity="0.3" stroke="#00e5ff" stroke-dasharray="2 4" stroke-width="0.5" x1="50%" x2="50%" y1="0" y2="100%"></line>
+</svg>
+<!-- Map HUD Corner Metadata -->
+<div class="relative z-10 flex justify-between items-start text-on-surface-variant font-code-telemetry text-code-telemetry">
+<div class="flex items-center gap-1 bg-surface-container-lowest/80 px-2 py-0.5 rounded-DEFAULT backdrop-blur-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span>HUD: REALTIME RECON</span>
+</div>
+<div class="bg-surface-container-lowest/80 px-2 py-0.5 rounded-DEFAULT backdrop-blur-sm text-right">
+<span>MAG 4.2x // AZIMUTH 312°</span>
+</div>
+</div>
+<!-- Tactical Pin Markers -->
+<div class="absolute inset-0 z-20 pointer-events-auto">
+<!-- Pin 1: ALPHA-1 (Selected default) -->
+<button class="absolute top-[28%] left-[22%] -translate-x-1/2 -translate-y-1/2 group focus:outline-none flex flex-col items-center" id="pin-alpha" onclick="selectScene('alpha')">
+<span class="relative flex h-8 w-8 items-center justify-center">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-60" id="pin-alpha-ping"></span>
+<span class="relative inline-flex rounded-full h-6 w-6 bg-surface-container-lowest items-center justify-center shadow-[0_0_12px_rgba(0,229,255,0.7)]">
+<span class="material-symbols-outlined text-[15px] text-primary-container">biotech</span>
+</span>
+</span>
+<span class="mt-1 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT text-primary font-code-telemetry text-code-telemetry tracking-tighter">
+            ALPHA-1
+          </span>
+</button>
+<!-- Pin 2: BRAVO-2 -->
+<button class="absolute top-[48%] right-[24%] -translate-x-1/2 -translate-y-1/2 group focus:outline-none flex flex-col items-center" id="pin-bravo" onclick="selectScene('bravo')">
+<span class="relative flex h-8 w-8 items-center justify-center">
+<span class="hidden animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-container opacity-60" id="pin-bravo-ping"></span>
+<span class="relative inline-flex rounded-full h-6 w-6 bg-surface-container-lowest items-center justify-center shadow-[0_0_8px_rgba(255,198,129,0.5)]">
+<span class="material-symbols-outlined text-[15px] text-tertiary-fixed-dim">warning</span>
+</span>
+</span>
+<span class="mt-1 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT text-tertiary-fixed-dim font-code-telemetry text-code-telemetry tracking-tighter">
+            BRAVO-2
+          </span>
+</button>
+<!-- Pin 3: CHARLIE-3 -->
+<button class="absolute bottom-[20%] left-[45%] -translate-x-1/2 -translate-y-1/2 group focus:outline-none flex flex-col items-center" id="pin-charlie" onclick="selectScene('charlie')">
+<span class="relative flex h-8 w-8 items-center justify-center">
+<span class="hidden animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed opacity-60" id="pin-charlie-ping"></span>
+<span class="relative inline-flex rounded-full h-6 w-6 bg-surface-container-lowest items-center justify-center shadow-[0_0_8px_rgba(180,197,255,0.5)]">
+<span class="material-symbols-outlined text-[15px] text-secondary">gps_fixed</span>
+</span>
+</span>
+<span class="mt-1 px-1.5 py-0.5 bg-surface-container-lowest/90 rounded-DEFAULT text-secondary font-code-telemetry text-code-telemetry tracking-tighter">
+            CHARLIE-3
+          </span>
+</button>
+</div>
+<!-- Bottom Map Status Overlay -->
+<div class="relative z-10 flex items-center justify-between bg-surface-container-low/90 backdrop-blur-md px-2.5 py-1.5 rounded-DEFAULT">
+<div class="flex items-center gap-1.5 text-body-sm font-body-sm text-on-surface truncate">
+<span class="material-symbols-outlined text-[14px] text-primary-container">shield</span>
+<span class="truncate font-code-telemetry text-code-telemetry" id="map-quick-status">ALPHA-1: PERIMETER SEALED // LUMINOL ACTIVE</span>
+</div>
+<button class="px-1.5 py-0.5 bg-surface-container-highest text-primary font-code-telemetry text-code-telemetry rounded-DEFAULT flex items-center gap-0.5" onclick="recenterMap()">
+<span class="material-symbols-outlined text-[12px]">my_location</span>
+          CENTER
+        </button>
+</div>
+</div>
+</div>
+<!-- Primary Scene Dossier Detail Card -->
+<div class="px-margin flex flex-col space-y-3">
+<div class="bg-surface-container-low rounded-xl p-4 shadow-md flex flex-col space-y-4">
+<!-- Card Header & Identifiers -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col space-y-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold tracking-wider" id="scene-code">
+              ALPHA-1
+            </span>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant" id="scene-id">
+              SCENE #NYC-2024-098
+            </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface pt-1" id="scene-name">
+            Northside Docks - Pier 44
+          </h2>
+<p class="font-code-telemetry text-code-telemetry text-primary" id="scene-coord">
+            LAT: 40.7128° N | LONG: -74.0060° W
+          </p>
+</div>
+<span class="px-2.5 py-1 rounded-DEFAULT bg-primary-container/15 text-primary-container font-label-sm text-label-sm tracking-tight text-right flex items-center gap-1.5" id="status-pill">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+          SEALED
+        </span>
+</div>
+<!-- Tactical Status Banner -->
+<div class="p-2.5 rounded-DEFAULT bg-surface-container text-on-surface font-code-telemetry text-code-telemetry flex items-start gap-2" id="scene-status-desc">
+<span class="material-symbols-outlined text-[16px] text-primary-container shrink-0 mt-0.5">verified_user</span>
+<span>PERIMETER SECURED - LUMINOL REAGENTS DEPLOYED. CHAIN OF CUSTODY INTEGRITY: 100%.</span>
+</div>
+<!-- Environmental Telemetry Matrix (Critical for forensic entomology) -->
+<div class="flex flex-col space-y-1.5">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-tertiary-fixed-dim">thermostat</span>
+            Micro-Climate Telemetry
+          </span>
+<span class="text-tertiary-fixed-dim font-code-telemetry text-code-telemetry">CALIBRATED</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<div class="bg-surface-container p-2 rounded-DEFAULT flex flex-col">
+<span class="text-on-surface-variant font-code-telemetry text-code-telemetry">AMBIENT</span>
+<span class="text-primary font-headline-sm text-headline-sm" id="env-temp">14°C</span>
+<span class="text-on-surface-variant font-code-telemetry text-[9px]">SURFACE: 11.2°C</span>
+</div>
+<div class="bg-surface-container p-2 rounded-DEFAULT flex flex-col">
+<span class="text-on-surface-variant font-code-telemetry text-code-telemetry">HUMIDITY</span>
+<span class="text-primary font-headline-sm text-headline-sm" id="env-humidity">62%</span>
+<span class="text-on-surface-variant font-code-telemetry text-[9px]">DEW POINT: 7°C</span>
+</div>
+<div class="bg-surface-container p-2 rounded-DEFAULT flex flex-col">
+<span class="text-on-surface-variant font-code-telemetry text-code-telemetry">SURFACE WIND</span>
+<span class="text-primary font-headline-sm text-headline-sm" id="env-wind">4 kt</span>
+<span class="text-on-surface-variant font-code-telemetry text-[9px]">VECTOR: NW 320°</span>
+</div>
+</div>
+</div>
+<!-- Evidence Inventory Summary Bar -->
+<div class="bg-surface-container p-3 rounded-lg flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-container">inventory_2</span>
+            Logged On-Site Artifacts
+          </span>
+<span class="font-code-telemetry text-code-telemetry text-primary-container bg-primary-container/10 px-1.5 py-0.5 rounded-DEFAULT" id="evidence-count">
+            7 Evidence Items
+          </span>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface font-code-telemetry text-code-telemetry">#EV-01</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface font-code-telemetry text-code-telemetry">#EV-02</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface font-code-telemetry text-code-telemetry">#EV-03</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface font-code-telemetry text-code-telemetry">#EV-04</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface font-code-telemetry text-code-telemetry">#EV-05</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface font-code-telemetry text-code-telemetry">#EV-06</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface font-code-telemetry text-code-telemetry">#EV-07</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1 font-code-telemetry text-code-telemetry text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-primary">360</span>
+<span id="spheres-count">14 High-Res Spheres</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-primary">view_in_ar</span>
+<span id="lidar-count">3 LiDAR 3D Meshes</span>
+</div>
+</div>
+</div>
+<!-- Personnel in Charge -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-2.5 rounded-DEFAULT">
+<div class="flex items-center gap-2">
+<img class="w-8 h-8 rounded-full object-cover shadow-sm" data-alt="High detail forensic criminologist officer badge portrait photo in tactical navy attire against dark laboratory lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq3J6mKbhqC7AQWs3L3iwWXmsbc8MlTlzybDRcqfkHmR2n23i_nx18uvoHrBDWGNzA7P5JYyovokyNYkNftaxXHdKJ6la0Se1nONUQT29ymFJ0KoEdwOAfi5zwkjjPC70HSKsdp_IbrtWbQgw0R2-VowN4lg23YTg3OEPbd-pVvkhtAKnqU-C8Wo_azrvOi1FQybBqmTXAN2C0jPfIMh2_urrrbxym9utB5s4M6Gw"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-none" id="lead-personnel">Detective Miller</span>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant" id="unit-personnel">CSI Field Recon Unit 4</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-primary-container">contact_phone</span>
+</div>
+<!-- Action Buttons Grid -->
+<div class="flex flex-col space-y-2 pt-1">
+<button class="w-full py-2.5 rounded-DEFAULT bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-[0_0_12px_rgba(0,229,255,0.3)] active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined text-[18px]">view_in_ar</span>
+          Inspect 3D Scene Mesh
+        </button>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 px-3 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-md text-label-md font-medium uppercase tracking-wider flex items-center justify-center gap-1.5 active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+            Courier
+          </button>
+<button class="py-2 px-3 rounded-DEFAULT bg-surface-container-highest text-primary font-label-md text-label-md font-medium uppercase tracking-wider flex items-center justify-center gap-1.5 active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined text-[16px]">assignment</span>
+            Field Log
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Realtime Geo-Telemetry Feed Card -->
+<div class="px-margin flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-primary">Field Recon Telemetry</span>
+<span class="font-code-telemetry text-code-telemetry text-tertiary-fixed-dim">UPDATED 14s AGO</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-3 space-y-2.5">
+<div class="flex items-center justify-between text-body-sm font-body-sm bg-surface-container px-2.5 py-1.5 rounded-DEFAULT">
+<div class="flex items-center gap-2 truncate">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="text-on-surface truncate">Transit: Van #CSI-08 en-route Central Lab</span>
+</div>
+<span class="font-code-telemetry text-code-telemetry text-primary shrink-0">ETA 08m</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm bg-surface-container px-2.5 py-1.5 rounded-DEFAULT">
+<div class="flex items-center gap-2 truncate">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span class="text-on-surface truncate">Perimeter Sensor #P-04 Triggered (Low)</span>
+</div>
+<span class="font-code-telemetry text-code-telemetry text-tertiary-fixed-dim shrink-0">CHECKED</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm bg-surface-container px-2.5 py-1.5 rounded-DEFAULT">
+<div class="flex items-center gap-2 truncate">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="text-on-surface truncate">Drone LiDAR Point-Cloud Processing</span>
+</div>
+<span class="font-code-telemetry text-code-telemetry text-secondary shrink-0">84%</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  const sceneDatabase = {
+    alpha: {
+      code: 'ALPHA-1',
+      id: 'SCENE #NYC-2024-098',
+      name: 'Northside Docks - Pier 44',
+      coord: 'LAT: 40.7128° N | LONG: -74.0060° W',
+      statusPill: 'SEALED',
+      statusClass: 'bg-primary-container/15 text-primary-container',
+      statusDesc: 'PERIMETER SECURED - LUMINOL REAGENTS DEPLOYED. CHAIN OF CUSTODY INTEGRITY: 100%.',
+      temp: '14°C',
+      humidity: '62%',
+      wind: '4 kt NW',
+      evidenceText: '7 Evidence Items',
+      spheres: '14 High-Res Spheres',
+      lidar: '3 LiDAR 3D Meshes',
+      lead: 'Detective Miller',
+      unit: 'CSI Field Recon Unit 4',
+      quick: 'ALPHA-1: PERIMETER SEALED // LUMINOL ACTIVE'
+    },
+    bravo: {
+      code: 'BRAVO-2',
+      id: 'SCENE #NYC-2024-102',
+      name: 'Apex Biochemical Research Lab',
+      coord: 'LAT: 40.7484° N | LONG: -73.9857° W',
+      statusPill: 'HAZMAT L2',
+      statusClass: 'bg-tertiary-container/20 text-tertiary-fixed-dim',
+      statusDesc: 'CHAIN OF CUSTODY ACTIVE - HAZMAT LEVEL 2 BIOHAZARD PROTOCOLS IN EFFECT.',
+      temp: '19°C',
+      humidity: '41%',
+      wind: '0 kt CALM',
+      evidenceText: '12 Evidence Items',
+      spheres: '26 High-Res Spheres',
+      lidar: '5 LiDAR 3D Meshes',
+      lead: 'Dr. Evelyn Vance',
+      unit: 'Hazmat Forensic Division',
+      quick: 'BRAVO-2: ACTIVE CHAIN // BIO-SAFETY SEAL'
+    },
+    charlie: {
+      code: 'CHARLIE-3',
+      id: 'SCENE #NYC-2024-089',
+      name: 'Old Town Abandoned Vault',
+      coord: 'LAT: 40.7061° N | LONG: -74.0089° W',
+      statusPill: 'BALLISTICS',
+      statusClass: 'bg-secondary-container/30 text-secondary',
+      statusDesc: 'BALLISTICS TRAJECTORY RECONSTRUCTION IN PROGRESS - LASER SPECTROMETRY LOGGED.',
+      temp: '9°C',
+      humidity: '78%',
+      wind: '1 kt SE',
+      evidenceText: '5 Evidence Items',
+      spheres: '9 High-Res Spheres',
+      lidar: '2 LiDAR 3D Meshes',
+      lead: 'Investigator S. Thorne',
+      unit: 'Ballistics Recon Squad',
+      quick: 'CHARLIE-3: TRAJECTORY SCAN // 5 SHELLS FOUND'
+    }
+  };
+
+  function selectScene(key) {
+    const data = sceneDatabase[key];
+    if (!data) return;
+
+    // Update DOM texts
+    document.getElementById('scene-code').innerText = data.code;
+    document.getElementById('scene-id').innerText = data.id;
+    document.getElementById('scene-name').innerText = data.name;
+    document.getElementById('scene-coord').innerText = data.coord;
+    
+    const pill = document.getElementById('status-pill');
+    pill.innerText = data.statusPill;
+    pill.className = `px-2.5 py-1 rounded-DEFAULT font-label-sm text-label-sm tracking-tight text-right flex items-center gap-1.5 ${data.statusClass}`;
+
+    document.getElementById('scene-status-desc').lastElementChild.innerText = data.statusDesc;
+    document.getElementById('env-temp').innerText = data.temp;
+    document.getElementById('env-humidity').innerText = data.humidity;
+    document.getElementById('env-wind').innerText = data.wind;
+    document.getElementById('evidence-count').innerText = data.evidenceText;
+    document.getElementById('spheres-count').innerText = data.spheres;
+    document.getElementById('lidar-count').innerText = data.lidar;
+    document.getElementById('lead-personnel').innerText = data.lead;
+    document.getElementById('unit-personnel').innerText = data.unit;
+    document.getElementById('map-quick-status').innerText = data.quick;
+
+    // Toggle ping pulses on pins
+    ['alpha', 'bravo', 'charlie'].forEach(id => {
+      const ping = document.getElementById(`pin-${id}-ping`);
+      if (id === key) {
+        ping.classList.remove('hidden');
+      } else {
+        ping.classList.add('hidden');
+      }
+    });
+  }
+
+  function filterScenes(type) {
+    const buttons = {
+      all: document.getElementById('filter-all'),
+      cold: document.getElementById('filter-cold'),
+      transit: document.getElementById('filter-transit')
+    };
+
+    Object.keys(buttons).forEach(key => {
+      const btn = buttons[key];
+      if (key === type) {
+        btn.className = "whitespace-nowrap px-3 py-1.5 rounded-DEFAULT bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold uppercase tracking-wider shadow-[0_0_12px_rgba(0,229,255,0.3)] transition-all";
+      } else {
+        btn.className = "whitespace-nowrap px-3 py-1.5 rounded-DEFAULT bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider hover:text-primary transition-all";
+      }
+    });
+
+    if (type === 'cold') {
+      selectScene('charlie');
+    } else if (type === 'transit') {
+      selectScene('bravo');
+    } else {
+      selectScene('alpha');
+    }
+  }
+
+  function recenterMap() {
+    selectScene('alpha');
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.8)]" data-active-classes="text-primary-container font-medium"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-[22px]">radar</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Overview</span></a><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">monitoring</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Dashboard</span></a><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="forensic-lab" href="#"><span class="material-symbols-outlined text-[22px]">biotech</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Lab</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-12 h-12 transition-colors text-primary-container font-medium" data-path="locations" href="#"><span class="material-symbols-outlined text-[22px]">share_location</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Locations</span></a><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="evidence" href="#"><span class="material-symbols-outlined text-[22px]">inventory_2</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Evidence</span></a><a class="flex flex-col items-center justify-center w-12 h-12 text-on-surface-variant transition-colors" data-path="more" href="#"><span class="material-symbols-outlined text-[22px]">menu</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">More</span></a></div></nav></body></html>
